@@ -44,6 +44,7 @@ public class TripRepositoryImpl implements TripRepository {
         }
         trips.get(user.getId()).add(newTrip);
         selectedCab.setCurrentTrip(newTrip);
+        selectedCab.bookCab();
     }
 
     @Override
